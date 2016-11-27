@@ -9,7 +9,7 @@
    */
 
   function ConvolutionFilter(matrix) {
-    if (!(this instanceof Filter)) return new Filter(matrix);
+    if (!(this instanceof ConvolutionFilter)) return new ConvolutionFilter(matrix);
     if (!matrix) throw new TypeError('convolution matrix required');
     this.matrix = matrix;
     this.factor(1);
